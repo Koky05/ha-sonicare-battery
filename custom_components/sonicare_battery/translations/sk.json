@@ -1,0 +1,71 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sonicare Batéria",
+        "description": "Vyberte zubnú kefku Sonicare pre sledovanie stavu batérie.",
+        "data": {
+          "address": "Zariadenie",
+          "name": "Názov (voliteľné)"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Pridať zubnú kefku Sonicare",
+        "description": "Chcete pridať {name} ({address})?",
+        "data": {
+          "name": "Názov"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Zariadenie je už nakonfigurované",
+      "no_device": "Zariadenie nenájdené",
+      "no_devices_found": "Nenájdené žiadne zariadenia Sonicare. Uistite sa, že je kefka na nabíjacej stanici."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery": {
+        "name": "Batéria"
+      },
+      "last_seen": {
+        "name": "Naposledy videné"
+      },
+      "signal_strength": {
+        "name": "Sila signálu"
+      },
+      "handle_state": {
+        "name": "Stav kefky",
+        "state": {
+          "off": "Vypnutá",
+          "standby": "Pohotovosť",
+          "brushing": "Čistenie",
+          "charging": "Nabíjanie",
+          "shutdown": "Vypínanie",
+          "validate": "Validácia",
+          "unknown": "Neznámy"
+        }
+      },
+      "brushing_time": {
+        "name": "Čas čistenia"
+      },
+      "brushing_mode": {
+        "name": "Režim čistenia",
+        "state": {
+          "clean": "Čistenie",
+          "white_plus": "Bielenie+",
+          "gum_health": "Zdravie ďasien",
+          "deep_clean_plus": "Hĺbkové čistenie+"
+        }
+      },
+      "intensity": {
+        "name": "Intenzita",
+        "state": {
+          "low": "Nízka",
+          "medium": "Stredná",
+          "high": "Vysoká"
+        }
+      }
+    }
+  }
+}

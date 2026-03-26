@@ -1,0 +1,51 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sonicare Battery",
+        "description": "Select a Sonicare toothbrush to monitor battery level.",
+        "data": {
+          "address": "Device",
+          "name": "Name (optional)"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Add Sonicare Toothbrush",
+        "description": "Do you want to add {name} ({address})?",
+        "data": {
+          "name": "Name"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Device is already configured",
+      "no_device": "No device found",
+      "no_devices_found": "No Sonicare devices found. Make sure the toothbrush is on the charging stand."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery": {
+        "name": "Battery"
+      },
+      "last_seen": {
+        "name": "Last Seen"
+      },
+      "signal_strength": {
+        "name": "Signal Strength"
+      },
+      "handle_state": {
+        "name": "Handle State"
+      },
+      "brushing_time": {
+        "name": "Brushing Time"
+      },
+      "brushing_mode": {
+        "name": "Brushing Mode"
+      },
+      "intensity": {
+        "name": "Intensity"
+      }
+    }
+  }
+}
