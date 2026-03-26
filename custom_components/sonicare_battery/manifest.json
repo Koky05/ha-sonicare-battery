@@ -1,14 +1,6 @@
 {
   "domain": "sonicare_battery",
   "name": "Sonicare Battery",
-  "codeowners": ["@Koky05"],
-  "config_flow": true,
-  "dependencies": ["bluetooth_adapters"],
-  "documentation": "https://github.com/Koky05/ha-sonicare-battery",
-  "integration_type": "device",
-  "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/Koky05/ha-sonicare-battery/issues",
-  "requirements": ["bleak>=0.22.0", "bleak-retry-connector>=3.5.0"],
   "bluetooth": [
     {
       "local_name": "SONICARE*"
@@ -17,5 +9,13 @@
       "local_name": "Sonicare*"
     }
   ],
+  "codeowners": ["@Koky05"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/Koky05/ha-sonicare-battery",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/Koky05/ha-sonicare-battery/issues",
+  "requirements": ["bleak>=0.22.0", "bleak-retry-connector>=3.5.0"],
   "version": "1.1.0"
 }
